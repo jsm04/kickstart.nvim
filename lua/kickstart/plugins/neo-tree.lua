@@ -6,7 +6,7 @@ return {
   version = '*',
   dependencies = {
     'nvim-lua/plenary.nvim',
-    'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+    'nvim-tree/nvim-web-devicons',
     'MunifTanjim/nui.nvim',
   },
   lazy = false,
@@ -16,6 +16,7 @@ return {
   opts = {
     filesystem = {
       window = {
+        position = 'float', -- can also use 'float' for fullscreen floating
         mappings = {
           ['\\'] = 'close_window',
         },
